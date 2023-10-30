@@ -1,0 +1,55 @@
+# IDE files
+.idea/
+.vscode/
+
+# Compiled files
+/target/
+*.class
+
+# Dependency directories
+/lib/
+/bin/
+/build/
+
+# Logs
+/logs/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Maven specific
+mvnw
+.mvn/
+*.log
+
+# Eclipse specific
+.classpath
+.project
+.settings/
+
+# Intellij specific
+*.iml
+*.iws
+*.ipr
+
+# Gradle specific
+.gradle/
+build/
+
+# Spring Boot specific
+/application*.yml
+
+# Test reports
+/TEST-*.xml
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Local configuration files
+/application-local*.yml
+
+# Spring Boot devtools
+.restart/
