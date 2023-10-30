@@ -1,0 +1,19 @@
+
+spring:
+  thymeleaf:
+    cache: false
+    enabled: true
+    prefix: classpath:templates/
+    suffix: .html
+  security:
+    saml2:
+      relyingparty:
+        registration:
+          azure-ad:
+            signing.credentials:
+              - private-key-location: classpath:credentials/rp-private.key
+                certificate-location: classpath:credentials/rp-certificate.crt
+            assertingparty:
+              metadata-uri: https://login.microsoftonline.com/5c0f9f45-6569-4ad1-bcff-097f2af29283/federationmetadata/2007-06/federationmetadata.xml?appid=25f212da-e4c1-4af7-831e-1e9888818f0c
+logging.level:
+  org.springframework.security: TRACE

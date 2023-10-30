@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+    <title>Welcome to Spring Security-SAML 2.0 Login </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+   
+<div class="container">
+    <ul class="nav">
+        <li class="nav-item">
+            <form th:action="@{/logout}" method="post">
+                <button class="my-button" id="logout_button" type="submit">
+                     Logout
+                </button>
+            </form>
+        </li>
+    </ul>
+</div>
+  
+</html>
